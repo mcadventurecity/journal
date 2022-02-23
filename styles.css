@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #450084;
+    color: #cbb677;
+    padding: 10px
+}
+h1, h2, h3,h4 {
+    font-family: 'Arvo', sans-serif;
+}
+nav {
+    background-color: #cbb677;
+    padding: 10px;
+    color: #450084;
+    text-align: center;
+}
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navitem {
+    padding: 10px;
+}
+.navitem a {
+    font-family: 'Arvo', sans-serif;
+    color:#450084;
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .navitem {
+        display: inline;
+    }
+}
+.code_inline {
+    font-family: monospace;
+    background-color: #cccccc;
+    padding: 2px;
+    font-size:larger;
+}
+.definition {
+    font-style: italic;
+    
+}
+pre {
+    background-color: #cccccc;
+    padding: 10px;
+    font-size:larger;
+    color:green;
+    font-weight: bold;
+}
