@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jarod Reichel's Honors Capstone</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="../../styles.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header>
+            <h1>Jarod Reichel's Honors Capstone Journal</h1>
+        </header>
+        <nav>
+            <ul class="navlist">
+                <li class="navitem"><a href="../../index.html">Home</a></li>
+                <li class="navitem"><a href="../index.html">Journal Entries</a></li>
+                <li class="navitem"><a href="../../gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>March 30, 2022</h2>
+            <p>Although I did not get much done recently due to being on vacation for Spring Break, followed by a week of catching up on assignments for other courses, I have returned, and this week I am beginning to think about a logical structure for the JSON data payloads.</p>
+            <p>For the JSON structure, I am currently focusing on the structure of a single problem. Each problem will have a name as well as a numerical identifier. In addition, a problem will need to have lists of parameters and/or return values, each of which has its own properties such as its data type. However, since different languages handle typing differently, we will probably need to come up with an internal language-independent way of defining types.</p>
+            <p>Also, each problem will have a list of test cases, which will take the form of example inputs and outputs. Each test case will also have unit testing code that can be run on the student's code, in various languages, using a virtualization system such as Docker. Finally, the payload may also include a link to the solution code, in various languages once again, as well as a description of the problem for instructors to use as an "answer key". However, these will have to somehow be hidden, so the student cannot view this information.</p>
+            <h3>JSON Example Structure (Incomplete)</h3>
+            <pre>
+                {
+                    "id":0,
+                    "name":"ProblemExample",
+                    "description":"Students must solve this problem",
+                    "solution": {
+                    
+                    },
+                    "parameters":[
+                    {"type":"int"},
+                    {"type":"string"}
+                    ],
+                    "returns":[
+                    {"type":"string"}
+                    ],
+                    "testcases":[
+                
+                    ]
+                
+                }
+            </pre>
+            <p>By next week, I plan to begin work on the proposal paper. In addition, I would like to further plan the sub-object formats, such as for the solution and unit tests, for the JSON structure. Also, I would soon like to begin exploring potential frameworks to use for development of the project, as well as potentially do more interface prototyping.</p>
+            <p>See you next week,</p>
+            <p class="signature">Jarod Reichel</p>
+        </main>
+        <footer>
+            <p>Site by Jarod Reichel</p>
+        </footer>
+    </body>
+</html>
