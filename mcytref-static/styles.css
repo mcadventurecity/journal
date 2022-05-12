@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway&display=swap');
+
+body {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+header {
+  background-color: #4d4d4d;
+  color: #e68a00;
+  padding: 10px;
+  text-align: center;
+}
+nav {
+  background-color: #999999;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navitem {
+  padding: 10px;
+}
+.navitem a {
+  color:white;
+  text-decoration: none;
+}
+main {
+  padding: 10px;
+}
+table {
+  border: 1px solid;
+  width: 100vw;
+}
+tr {
+  border: 1px solid;
+}
+td, th {
+  border: 1px solid;
+  padding: 25px;
+}
+footer {
+  background-color: #333333;
+  padding: 10px;
+  color: white;
+  margin-top: auto;
+  
+}
+@media (min-width: 768px) {
+  .navitem {
+      display: inline;
+  }
+  .modpack-info {
+      width: 33.3%;
+      padding: 10px;
+      float: left;
+  }
+  .modpack-desc {
+      width: 33.4%;
+      padding: 10px;
+      float: left;
+  }
+  .modpack-gallery {
+      width: 33.3%;
+      padding: 10px;
+      float: left;
+  }
+}
+h1, h2, h3,h4 {
+  font-family: 'Orbitron', Verdana, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
